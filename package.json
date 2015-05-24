@@ -1,0 +1,26 @@
+{
+  "name": "thought-follower",
+  "version": "1.0.0",
+  "description": "are you a leader or a follower?",
+  "main": "index.js",
+  "readme": "README.md",
+  "scripts": {
+    "test": "EXIT_STATUS=0; npm run lint || EXIT_STATUS=$?; npm run tape || EXIT_STATUS=$?; exit $EXIT_STATUS",
+    "tape": "tape test/test-*.js | tap-spec",
+    "lint": "eslint lib/ test/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/TheAlphaNerd/thought-follower.git"
+  },
+  "keywords": [
+    "twitter",
+    "thought-leadering"
+  ],
+  "author": "Myles Borins <thealphanerd@famo.us>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/TheAlphaNerd/thought-follower/issues"
+  },
+  "homepage": "https://github.com/TheAlphaNerd/thought-follower#readme"
+}
