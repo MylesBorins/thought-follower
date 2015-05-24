@@ -5,9 +5,10 @@
   "main": "index.js",
   "readme": "README.md",
   "scripts": {
-    "test": "EXIT_STATUS=0; npm run lint || EXIT_STATUS=$?; npm run tape || EXIT_STATUS=$?; exit $EXIT_STATUS",
-    "tape": "tape test/test-*.js | tap-spec",
-    "lint": "eslint lib/ test/"
+    "test": "EXIT_STATUS=0; npm run lint || EXIT_STATUS=$?; npm run tap || EXIT_STATUS=$?; exit $EXIT_STATUS",
+    "tap": "tap test/test-*.js ",
+    "lint": "eslint lib/ test/",
+    "watch": "nodemon --ignore node_modules/ -e js,json --exec 'npm test'"
   },
   "repository": {
     "type": "git",
@@ -22,5 +23,15 @@
   "bugs": {
     "url": "https://github.com/TheAlphaNerd/thought-follower/issues"
   },
-  "homepage": "https://github.com/TheAlphaNerd/thought-follower#readme"
+  "homepage": "https://github.com/TheAlphaNerd/thought-follower#readme",
+  "dependencies": {
+    "async": "^1.0.0",
+    "nconf": "^0.7.1",
+    "request": "^2.55.0",
+    "twit": "^1.1.20"
+  },
+  "devDependencies": {
+    "nodemon": "^1.3.7",
+    "tap": "^1.1.0"
+  }
 }
