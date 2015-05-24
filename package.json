@@ -26,6 +26,7 @@
   "homepage": "https://github.com/TheAlphaNerd/thought-follower#readme",
   "dependencies": {
     "async": "^1.0.0",
+    "level": "^1.0.0",
     "nconf": "^0.7.1",
     "request": "^2.55.0",
     "twit": "^1.1.20"
