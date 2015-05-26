@@ -1,7 +1,8 @@
 {
   "klout": "",
-  "twitterConsumerKey": "",
-  "twitterConsumerSecret": "",
-  "twitterAccessToken": "",
-  "twitterAccessTokenSecret": ""
+  "twitter": {
+    "consumer_key": "",
+    "consumer_secret": "",
+    "bearer": ""
+  }
 }
